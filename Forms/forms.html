@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms Project</title>
+    <style>
+      *{
+        background-color: azure;
+        padding: 5px;
+      }
+      form{
+        border: 2px solid aqua ;
+        margin-left: 300px;
+        margin-right: 300px;
+      }
+      table{
+        margin: auto;     }
+
+      tr{
+        
+      }
+      
+    </style>
+  </head>
+  <body>
+    <h2 style="text-align: center" >Job Application Form</h2>
+    <form action="">
+      <table >
+        <tr>
+          <td><label for="fname">First Name  :  </label></td>
+          <td><input type="text" placeholder="enter first name" required minlength="3"></td>
+        </tr>
+        <br>
+        <tr>
+          <td><label for="lname">Last Name  : </label></td>
+          <td><input type="text" placeholder="enter last name" minlength="3"></td>
+        </tr>
+        <br>
+        <tr>
+          <td><label for="email">Email Id : </label></td>
+          <td><input type="email" placeholder="enter email id" required></td>
+        </tr>
+        <br>
+        <tr>
+          <td><label for="pswd">Password  : </label></td>
+          <td><input type="password" placeholder="enter password" minlength="8" maxlength="15"></td>
+        </tr>
+        <br>
+        <tr>
+          <td><label for="dob">Date of Birth  : </label></td>
+          <td><input type="date"></td>
+        </tr>
+        <br>
+        <tr>
+          <td><label for="phn">Contact No.  : </label></td>
+          <td><input type="text" value="+91" disabled size="2"><input type="tel" placeholder="enter mobile no." minlength="10" maxlength="10" required></td>
+        </tr>
+        <br>
+        <tr>
+          <td><label for="add">Address  : </label></td>
+          <td><textarea name="add" id="" cols="30" rows="8"></textarea></td>
+        </tr>
+        
+        <br>
+        <tr>
+          <td>
+            <fieldset>
+              <legend>Gender</legend>            
+                <label for="male">Male  : </label><input type="radio" id="gender" name="gender">
+                <label for="female">Female  : </label><input type="radio" id="gender" name="gender">         
+            </fieldset>
+          </td>
+          
+        </tr>   
+        <br>
+        <tr>
+          <td>
+            <fieldset>
+              <legend>Qualification</legend>
+                <select name="graduate" id="">
+                  <option value="hsc">H.S..C. / 10th</option>
+                  <option value="ssc">S.S.C. / 12th</option>
+                  <option value="dip">Diploma</option>
+                  <option value="ug">Under-Graduate</option>
+                  <option value="pg">Post-Graduate</option>
+                  
+                </select>
+            </fieldset>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <fieldset>
+              <legend>Preferred Location</legend>
+                <label for="hyd">Hyderabad</label><input type="checkbox" name="" id="hyd">
+                <label for="ggn">Gurugram</label><input type="checkbox" name="" id="ggn">
+                <label for="blr">Bangalore</label><input type="checkbox" name="" id="blr">
+                <label for="noi">Noida</label><input type="checkbox" name="" id="noi">
+                <label for="pun">Pune</label><input type="checkbox" name="" id="pun">
+                <label for="mum">Mumbai</label><input type="checkbox" name="" id="mum">
+            </fieldset>
+          </td>
+          
+        </tr>
+        <br><br>
+        <tr>
+          <td><input type="submit"></td>
+          <td><input type="reset"></td>
+        </tr>
+        
+      </table>
+      
+    </form>
+
+    
+  </body>
+</html>

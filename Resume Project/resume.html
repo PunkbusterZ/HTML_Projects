@@ -1,27 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rahul's Resume</title>
-</head>
-<body>
-    <center><h1>My Resume</h1></center>
-    <main>
-        <header>
-            <table>
-                <tr>
-                    <td>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume Project</title>
+    <style>
+      body{
+        background-color: whitesmoke;
+        border: 2px solid black;
+        margin: 50px;
+      }
+      h1{
+        text-align: center;
 
-                    </td>
-                    <td>
-                        <img src="" alt="resume image" height="240" width="160">
-                    </td>
-                </tr>
-            </table>
+      }
+      div{
+        margin-left: 25px;
+      }
+      h4{
+        background-color: blanchedalmond;
+      }
+      th{
+        border: 1px solid black;
+      }
+      td{
+        text-align: center;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>My Resume</h1>
+    <main class="resume">
+      <div class="contact">
+        <header>
+          <h4>Contact Information</h4>
+          <table class="info" style="width: 100%;">
+            <tr>
+              <td class="info">
+                <h2>Rahul Sikri</h2>
+                <p>New Delhi India, abc@gmail.com</p>
+              </td>
+              <td class="profilepic">
+                <img
+                  src="data:image/jpeg;base64,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"
+                  alt="Image"
+                />
+              </td>
+            </tr>
+          </table>
         </header>
-        
+      </div>
+      <hr />
+      <div class="summary">
+        <h4>Profesional Summary</h4>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, ea
+          neque ratione quasi dicta voluptatum dolorem esse? Voluptatum
+          voluptatibus vel quo consequatur excepturi, deserunt reprehenderit
+          quae ut repellendus expedita, eveniet vitae cum temporibus
+          necessitatibus veniam suscipit, hic et esse. Inventore tempore,
+          cupiditate deleniti a exercitationem earum praesentium illum
+          consectetur perferendis rerum sunt dolores fugiat. Quas, incidunt modi
+          ducimus atque doloremque provident soluta sint sunt similique sed
+          pariatur molestiae et eaque quo mollitia labore quam voluptatem
+          consequatur ex inventore impedit voluptates magnam iste. Vitae,
+          expedita fugit. Eum atque corporis sint non laboriosam, hic tempora
+          consectetur? Assumenda perferendis ipsam tempora rem animi.
+        </p>
+      </div>
+      <hr />
+      <div class="skills">
+        <h4>Skills</h4>
+        <table style="width: 100%;">
+          <tr>
+            <td>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+            </td>
+            <td>
+              <ul>
+                <li>Core Java</li>
+                <li>BootStrap</li>
+                <li>Advance Java</li>
+              </ul>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <hr />
+      <div class="experience">
+        <h4>Experience</h4>
+        <dl>
+          <dt>ABC Company</dt>
+          <dd>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+            esse laborum quo, quis ipsum possimus fuga exercitationem voluptatum
+            maiores cum placeat sapiente odit nostrum labore praesentium eaque
+            tenetur aspernatur. Odit?
+          </dd>
+          <dt>XYZ Company</dt>
+          <dd>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+            minus eligendi, excepturi possimus voluptatem accusamus vel aliquam
+            blanditiis quas. Vel asperiores quibusdam dolores officiis
+            necessitatibus? Vel voluptatum nemo est quaerat.
+          </dd>
+        </dl>
+      </div>
+      <hr />
+      <div class="projects">
+        <h4>Projects</h4>
+        <dl>
+          <dt>Project 1</dt>
+          <dd>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic,
+            voluptate ad nesciunt autem earum nostrum, blanditiis corporis
+            impedit consequatur perferendis facilis quod voluptates deserunt
+            animi similique ab vitae nam adipisci placeat! Voluptatem assumenda
+            consectetur possimus quasi distinctio? Quae, tempore laboriosam?
+          </dd>
+          <dt>Project 2</dt>
+          <dd>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente,
+            error eius. Asperiores aspernatur ad odio dolor minus voluptates
+            cupiditate unde possimus et necessitatibus expedita dolorem enim
+            officia veritatis fugiat saepe mollitia ratione ea sint adipisci
+            excepturi, ex est illo? Molestiae.
+          </dd>
+          <dt>Project 3</dt>
+          <dd>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis enim
+            beatae itaque aut molestiae, illum hic error ullam. Eos distinctio
+            doloribus in sint deleniti dolores impedit illum! Beatae blanditiis
+            ab ipsum eius natus voluptatibus. At blanditiis consequatur in
+            dicta? Unde!
+          </dd>
+        </dl>
+      </div>
+      <hr />
+      <div class="education">
+        <h4>Education</h4>
+        <table style="width: 98%;">
+          <tr>
+            <th>S.no</th>
+            <th>College Name</th>
+            <th>PassingYear</th>
+            <th>Percentage</th>
+            <th>GPA</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>BPIT, GGSIPU</td>
+            <td>2018</td>
+            <td>81%</td>
+            <td>7.8</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>HSC</td>
+            <td>2014</td>
+            <td>77%</td>
+            <td>7.4</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>SSC</td>
+            <td>2012</td>
+            <td>84%</td>
+            <td>8.1</td>
+          </tr>
+        </table>
+      </div>
+      <div class="hobbies">
+        <h4>Hobbies</h4>
+        <ul>
+          <li>Cricket</li>
+          <li>Video Games</li>
+          <li>Movies</li>
+          <li>Anime</li>
+        </ul>
+      </div>
     </main>
-    
-</body>
+  </body>
 </html>
